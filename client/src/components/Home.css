@@ -1,0 +1,387 @@
+.home-wrapper {
+  background-image: url('D:\OneDrive\Documents\GitHub\HostingCloudly\client\public\bg.png'); /* Place image inside public/ and reference like this */
+  background-size: cover; /* or use 'contain' if you want full image without cropping */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; /* gives a nice parallax effect */
+  min-height: 100vh;
+  width: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  color: #ffffff;
+  position: relative;
+}
+
+/* Optional: Overlay to improve contrast */
+.home-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.85); /* Adjust opacity as needed */
+  z-index: -1;
+}
+
+
+.top-banner {
+  background: none;
+  text-align: center;
+  font-weight: bolder;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.top-banner a {
+  color: #00bfff;
+  text-decoration: underline;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1.5rem; /* Reduced height */
+  background-color: #ffffffcc;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  margin: 20px auto;
+  width: 90%;
+  height: 80px;
+  max-width: 1200px;
+  position: relative;
+  z-index: 1;
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo-img {
+  height: 100px;
+  width: auto;
+  object-fit: contain;
+}
+
+.brand-name {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #1e293b;
+}
+
+nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #334155;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #2563eb;
+}
+
+.login-btn {
+  padding: 0.5rem 1rem;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #1d4ed8;
+}
+.hero {
+  text-align: center;
+  padding: 100px 20px 60px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 80px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #d3d3d3;
+  margin-bottom: 30px;
+  max-width: 700px;
+  margin-inline: auto;
+}
+
+.cta-btn {
+  padding: 12px 28px;
+  font-size: 16px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #005fcc;
+}
+
+.feature-section {
+  background: #f7f9fc;
+  padding: 60px 80px;
+  color: #111;
+}
+
+.feature-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  background: white;
+  border-radius: 12px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.feature-card img {
+  width: 50px;
+  margin-bottom: 15px;
+}
+
+.feature-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.why-choose-section {
+  background: linear-gradient(to bottom, #ffffff, #f2f6fc);
+  padding: 80px 60px;
+  background-image: url('D:\OneDrive\Documents\GitHub\HostingCloudly\client\public\bg.png'); /* Place image inside public/ and reference like this */
+  background-size: cover; /* or use 'contain' if you want full image without cropping */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; /* gives a nice parallax effect */
+  text-align: center;
+  color: #001f4d;
+}
+
+.why-choose-section h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: whitesmoke;
+  margin-bottom: 10px;
+}
+
+.why-choose-section h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: whitesmoke;
+  margin-bottom: 90px;
+}
+
+.why-choose-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.why-choose-section p {
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  color: #110303;
+}
+
+.why-choose-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.choose-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  padding: 30px 20px;
+  width: 300px;
+  transition: all 0.3s ease;
+}
+
+.choose-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.1);
+}
+
+.choose-card img {
+  width: 40px;
+  margin-bottom: 15px;
+}
+
+.choose-card h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.feature-advanced-section {
+  padding: 4rem 2rem;
+  background: #f9fbff;
+  background-image: url('D:\OneDrive\Documents\GitHub\HostingCloudly\client\public\features.png'); /* Place image inside public/ and reference like this */
+  background-size: cover; /* or use 'contain' if you want full image without cropping */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.feature-content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0;
+  margin-bottom: 0px;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin-left: 500px;
+}
+
+.feature-right {
+  flex: 1;
+  padding: 0 2rem;
+  min-width: 300px;
+}
+
+.feature-right h2 {
+  font-size: 2rem;
+  color: #0f172a;
+  margin-bottom: 0.5rem;
+}
+
+.feature-right p {
+  color: #475569;
+  margin-bottom: 1.5rem;
+}
+
+.feature-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.feature-tabs .tab {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  background: #e0e7ff;
+  border-radius: 8px;
+  font-weight: 500;
+  color: #1e3a8a;
+}
+
+.feature-tabs .tab.active {
+  background: #1d4ed8;
+  color: #fff;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feature-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  color: #0f172a;
+}
+
+.check-icon {
+  color: #10b981;
+  margin-right: 0.75rem;
+}
+
+.pricing-comparison-section {
+  padding: 4rem 2rem;
+  background: #f8fafc;
+  text-align: center;
+}
+
+.pricing-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #0f172a;
+  margin-bottom: 0.5rem;
+}
+
+.pricing-subtitle {
+  color: #64748b;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.pricing-table {
+  overflow-x: auto;
+}
+
+.pricing-table table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.pricing-table th,
+.pricing-table td {
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid #e2e8f0;
+  font-size: 1rem;
+  color: #1e293b;
+}
+
+.pricing-table th {
+  background: #0f172a;
+  color: white;
+}
+
+.pricing-table th:not(:first-child) {
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+}
+
+@media screen and (max-width: 768px) {
+  .pricing-title {
+    font-size: 1.5rem;
+  }
+
+  .pricing-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .pricing-table table {
+    font-size: 0.85rem;
+  }
+}
+
